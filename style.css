@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900')
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #f0821d;
+	display: flex;
+}
+img {
+	width: 180px;
+	height: 180px;
+	margin-top: 8px;
+}
+.container .imgIP
+{
+     position: relative;
+     width: 450px;
+     height: 100%;
+     background: url(website.jpg);
+     background-size: cover;
+}
+.container .countdownIP {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; 
+	width: calc(100% - 450px);
+	
+}
+.container .countdownIP h2 {
+	text-align: center;
+	font-size: 1.5em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 500;
+	line-height: 4em;
+}
+.container .countdownIP h2 span {
+	font-size: 6em;
+	font-weight: 700;
+}
+ 
+.container .countdownIP h2 span i {
+	font-style: initial;
+	color: #ff0;
+}
+.container .countdownIP .countdown {
+	margin-top: 25px;
+	background: rgba(18,209,242,0.7);
+	width: 90%;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .countdownIP .countdown div {
+	position: relative;
+	width: 100px;
+	text-align: center;
+	color: #fff;
+	font-size: 2.5em;
+	font-weight: 500;
+	margin:0 15px;
+	margin-top: -25px;
+}
+.container .countdownIP .countdown div:before {
+	content: 'text';
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	color: #fff;
+	font-size: 0.35em;
+	font-weight: 500;
+	line-height: 35px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.container .countdownIP .countdown div#day:before {
+	content: 'Days';
+}
+.container .countdownIP .countdown div#hour:before {
+	content: 'Hours';
+}
+.container .countdownIP .countdown div#minute:before {
+	content: 'Minutes';
+}
+.container .countdownIP .countdown div#second:before {
+	content: 'Seconds';
+}
+.container .countdownIP .countdown div#second,.container .countdownIP .countdown div#second:before {
+	color: #ff0;
+}
+@media (max-width: 880px)
+{
+	.container .imgIP{
+		display: none;
+	}
+	.container .countdownIP{
+		width: 100%;
+	}
+}
+@media (max-width: 600px)
+{
+	.container .countdownIP .countdown {
+		height: 100px;
+	}
+	.container .countdownIP {
+		font-size: 1.1em;
+	}
+	.container .countdownIP .countdown div {
+		width: 80px;
+		font-size: 2em;
+		margin: 0;
+		margin-top: -25px;
+
+	}
+}
+
+
+
+
+
